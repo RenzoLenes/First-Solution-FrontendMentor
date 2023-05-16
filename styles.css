@@ -1,0 +1,79 @@
+@import url('https://fonts.google.com/specimen/Outfit');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(212, 45%, 89%);
+}
+
+.card {
+    text-align: center;
+    background-color: hsl(0, 0%, 100%);
+    padding: 1rem 1.2rem 1rem 1.2rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    height: 580px;
+}
+
+.card img {
+    width: 22rem;
+    height: auto;
+    display: block;
+    margin:auto;
+    border-radius: 15px;
+}
+
+.card h2 {
+    margin-top: 30px;
+    width: 22rem;
+    font-family: 'Outfit', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    
+}
+.card p {
+    margin-top: 20px;
+    width: 22rem;
+    font-family: 'Outfit', sans-serif;
+    color: rgba(128, 128, 128, 0.658);
+    font-weight: 600;
+    font-size: 18px;
+}
+.card:hover {
+    box-shadow: 0 20px 40px 0 rgba(0,0,0,0.2);
+}
+
+@media(max-width:376px){
+    .card {
+        padding: 1rem 1.2rem 1rem 1.2rem;
+        width: 300px;
+        height: 500px;
+
+    }
+    
+    .card img {
+        width: 16rem;
+    }
+    
+    .card h2 {
+        width: 16rem;
+        font-size: 20px;
+        font-weight: 700;
+        
+    }
+    .card p {
+
+        width: 16rem;
+        font-weight: 600;
+        font-size: 13px;
+    }
+}
